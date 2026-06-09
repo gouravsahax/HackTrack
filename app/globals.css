@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+/* Target every element on the page */
+* {
+    /* Firefox */
+    scrollbar-width: none;
+
+    /* IE and Edge Legacy */
+    -ms-overflow-style: none;
+}
+
+/* Chrome, Safari, and Opera (Webkit engine) */
+*::-webkit-scrollbar {
+    display: none;
+}
