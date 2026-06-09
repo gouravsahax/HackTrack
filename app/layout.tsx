@@ -31,8 +31,8 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="flex flex-col min-h-screen">
-          <div className="absolute h-full w-full">
+      <body className="flex flex-col min-h-screen bg-black">
+          <div className="absolute h-full w-full" >
               <LightRays
                   raysOrigin="top-center"
                   raysColor="#AAFF00"

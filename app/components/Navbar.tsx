@@ -7,19 +7,15 @@ import Link from "next/link";
 function Navbar() {
     return (
         <div className={`w-full`}>
-            <div className={`text-[#AAFF00] w-full flex justify-between items-center px-6 py-4 bg-black`}>
-                <div className={`flex gap-3 justify-center items-center`}>
-                    <Image
-                        src={logo}
-                        alt="logo"
-                        width={28}
-                    />
-                    <h1 className="text-3xl">HackTrack</h1>
+            <div className={`text-[#AAFF00] w-full flex justify-between items-center px-6 py-2 bg-black`}>
+                <div className="flex items-center gap-2 mr-6">
+                    <Image src={logo} alt="logo" width={18} />
+                    <span className="text-[#AAFF00] text-sm font-semibold tracking-[0.15em] uppercase">HackTrack</span>
                 </div>
 
                 <div className={`flex gap-4 text-xl`}>
-                    <Link href={`/create`}>Create</Link>
-                    <Link href={`/profile`}>Profile</Link>
+                    <Link href={`/create`}><span className="text-[#AAFF00] text-sm font-semibold tracking-[0.15em]">Create</span></Link>
+                    <Link href={`/profile`}><span className="text-[#AAFF00] text-sm font-semibold tracking-[0.15em]">Profile</span></Link>
                 </div>
             </div>
         </div>
