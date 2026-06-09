@@ -3,13 +3,15 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LightRays from "@/app/components/LightRays";
 import Navbar from "@/app/components/Navbar";
+import {NextFontWithVariable} from "next/dist/compiled/@next/font";
+import {ReactElement} from "@/types";
 
-const geistSans = Geist({
+const geistSans : NextFontWithVariable = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
+const geistMono : NextFontWithVariable = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
@@ -23,7 +25,7 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>): ReactElement {
   return (
     <html
       lang="en"
