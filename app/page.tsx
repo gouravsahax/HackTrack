@@ -1,9 +1,11 @@
+import Events from "@/app/components/Events";
+
 export default function Home() {
     return (
         <main className="min-h-screen w-full overflow-hidden text-[#f0ede6]">
             <section className="mx-auto flex min-h-screen w-full max-w-8xl flex-col justify-center px-4 sm:px-6 lg:px-8">
 
-                <div className="flex flex-col items-center justify-center gap-6 py-8 text-center">
+                <div className="flex flex-col items-center justify-center gap-6 py-12 text-center">
 
                     <h1 className="max-w-5xl text-[clamp(2.25rem,6vw,6rem)] font-semibold leading-[0.95] tracking-[-0.04em]">
                         The simplest way to{" "}
@@ -16,7 +18,7 @@ export default function Home() {
                     </p>
                 </div>
 
-
+                <Events />
 
             </section>
         </main>
