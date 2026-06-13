@@ -88,3 +88,6 @@ function NormalizeDate(dateString:string):string {
     }
     return date.toISOString().split('T')[0];
 }
+
+const Event = models.Event || model('Event', EventSchema);
+export default Event;
